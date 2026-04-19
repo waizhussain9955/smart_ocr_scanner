@@ -1,0 +1,87 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Flutter
+smart_ocr_scanner/build/
+smart_ocr_scanner/.dart_tool/
+smart_ocr_scanner/.flutter-plugins
+smart_ocr_scanner/.flutter-plugins-dependencies
+smart_ocr_scanner/*.iml
+smart_ocr_scanner/.metadata
+
+# Android
+smart_ocr_scanner/android/app/src/debug/
+smart_ocr_scanner/android/app/src/profile/
+smart_ocr_scanner/android/.gradle/
+smart_ocr_scanner/android/.idea/
+smart_ocr_scanner/android/local.properties
+smart_ocr_scanner/android/**/*.iml
+
+# iOS
+smart_ocr_scanner/ios/Flutter/Flutter.framework
+smart_ocr_scanner/ios/Flutter/Flutter.podspec
+smart_ocr_scanner/ios/.symlinks/
+
+# Windows
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Logs
+*.log
+
+# Processed images and outputs (generated during runtime)
+processed/
+outputs/
+
+# Environment variables
+.env
+.env.local
+
+# Mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Test coverage
+.coverage
+htmlcov/

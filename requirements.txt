@@ -1,0 +1,10 @@
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+paddleocr==2.8.1
+opencv-python-headless==4.10.0.84
+pydantic==2.9.2
+python-multipart==0.0.12
+pillow==11.1.0
+mypy==1.11.0
+paddlepaddle>=3.0.0
+setuptools>=40.0.0
