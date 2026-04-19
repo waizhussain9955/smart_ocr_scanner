@@ -39,10 +39,17 @@ def save_processed_image(processed_img: np.ndarray, filename: str) -> str:
     return out_filename
 
 def save_output_json(data: dict, filename: str) -> str:
-    """Save output JSON to /outputs folder."""
-    os.makedirs("outputs", exist_ok=True)
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    out_filename = f"outputs/{timestamp}_{filename}.json"
+    """Save output JSON to /outputs folder or specified path."""
+    # Check if filename is a full path
+    if filename.endswith('.json'):
+        # It's already a full path (for Vercel temp directory)
+        out_filename = filename
+    else:
+        # It's just a filename, save to outputs folder
+        os.makedirs("outputs", exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        out_filename = f"outputs/{timestamp}_{filename}.json"
+    
     with open(out_filename, 'w') as f:
         json.dump(data, f, indent=2)
     return out_filename
